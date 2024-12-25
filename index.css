@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.container {
+    margin: 50%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#search {
+  
+    width: 70%;
+    padding: 10px;
+    margin: 10px 20px 20px 140px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 2px solid red;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 20px 60px 280px;
+    
+}
+
+
+button:hover {
+    background-color: #f51d1d;
+}
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Card {
+    background: #e38181;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+
+    background-color: black;
+}
+
+.Card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.Card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.Card h4 {
+    font-size: 16px;
+    color: #666;
+    color: white;
+}
+
+
+/* HTML: <div class="loader"></div> */
+/* #loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    color:#0000;
+    background: linear-gradient(90deg,#000 25%,#8A9B0F 0 50%,#C02942 0 75%,#00A0B0 0) 0 0/400% 100%;
+    -webkit-background-clip:text;
+            background-clip:text;
+    animation:l10 5s infinite cubic-bezier(0.3,1,0,1);
+  }
+  #loader:before {
+    content:"Loading..."
+  }
+  @keyframes l10 {
+    25% {background-position: calc(1*100%/3) 0}
+    50% {background-position: calc(2*100%/3) 0}
+    75% {background-position: calc(3*100%/3) 0}
+    100%{background-position: calc(4*100%/3) 0}
+  } */
+/* Existing CSS */
+
+.loader {
+    border: 6px solid #f3f3f3;
+    /* Light grey */
+    border-top: 6px solid #007BFF;
+    /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    display: none;
+    /* Hidden by default */
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
